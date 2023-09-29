@@ -1,0 +1,112 @@
+// .card-title {
+//   position: absolute;
+//   color: #ffffff;
+//   top: 40%;
+//   left: 2%;
+// }
+
+// .information > * {
+//   background: #1d1d1c;
+//   background-blend-mode: soft-light;
+//   filter: blur(31px);
+//   // backdrop-filter: blur(31px);
+//   border-radius: 0px 0px 10px 10px;
+//   position: absolute;
+// }
+
+// .disableblur {
+//   filter: blur(0);
+// }
+@import "../../styles/main.scss";
+
+.citybrief__title {
+  color: $primary-300;
+}
+
+.information {
+  > p {
+    color: $neutral-n0;
+  }
+}
+// .citybrief__fact {
+//   display: -webkit-box;
+//   -webkit-line-clamp: 5;
+//   -webkit-box-orient: vertical;
+//   overflow: hidden;
+//   text-overflow: clip;
+// }
+
+// .citybrief__title .citybrief__fact {
+//   // position: absolute;
+
+//   background: linear-gradient(
+//     180deg,
+//     rgba(14, 14, 13, 0) 0%,
+//     rgba(14, 14, 13, 0.507435) 23.23%,
+//     #0e0e0d 56.04%
+//   );
+// }
+
+.blurred__citybrief {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(0, 0, 0, 0.7)
+  ); /* This creates a gradient that starts transparent at the top and becomes more opaque black at the bottom */
+  position: absolute;
+  height: 102.99%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+// -----------------------------------------------------------------------
+
+// .popup-city,
+// .overlay-city {
+//   width: 80vw;
+//   height: 77vh;
+//   top: -400%;
+//   left: -200%;
+//   right: 0px;
+//   bottom: 0;
+//   position: fixed;
+// }
+
+// .overlay-city {
+//   background: rgb(70, 67, 67);
+// }
+// .popup-content-city {
+//   position: absolute;
+//   top: 40%;
+//   left: 50%;
+//   transform: translate(-60%, -40%);
+//   line-height: 1.8;
+//   /* background: #aba9a9; */
+//   padding: 14px 28px;
+//   border-radius: 3px;
+//   max-width: 600px;
+//   min-width: 300px;
+// }
+
+// .close-popup-city {
+//   color: rgb(14, 14, 14);
+//   background-color: #ffcd29c2;
+//   position: absolute;
+//   top: -180px;
+//   left: 760px;
+//   /* right: 1px; */
+//   padding: 5px 7px;
+// }
+
+// .close-popup-city:hover {
+//   background-color: #ffcc29;
+// }
+
+/* CSS for the scrollable popup */
+// --------------------------------------------------------------------------------
+.CityBrief:hover {
+  cursor: pointer; /* Change the cursor to a pointer to indicate clickability */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Add a subtle box-shadow on hover */
+  // transform: scale(1.01); /* Slightly scale up the card on hover */
+  transition: transform 0.3s, box-shadow 0.3s;
+}

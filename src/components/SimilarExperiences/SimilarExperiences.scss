@@ -1,0 +1,182 @@
+/* WhatsHappening.scss */
+/* WhatsHappening.scss */
+.cards-container {
+  display: flex;
+  align-items: center; /* Center the items vertically (if needed) */
+}
+.whats-happening__bottom-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.whats-happening__bottom {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+}
+
+.slider-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.slider-button {
+  background-color: #5f44b0;
+  color: #ffffff;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 8px; /* Add margin to create space between buttons */
+}
+
+/* WhatsHappening.scss */
+.slider-button {
+  background-color: #5f44b0;
+  color: #ffffff;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn btn-primary {
+  color: #92c35b; /* Change the color to the desired hover color */
+  cursor: pointer; /* Optional: Show a pointer cursor on hover */
+  text-decoration: underline; /* Add an underline on hover */
+  transition: transform 0.2s ease-in-out; /* Add zoom effect on hover */
+  transform: scale(1.05); /* Zoom in 5% on hover */
+}
+.whats-happening__top h2 {
+  position: relative;
+}
+
+// .whats-happening__top h2:hover {
+//   cursor: pointer; /* Optional: Show a pointer cursor on hover */
+//   text-decoration: underline yellow; /* Add an underline on hover */
+//   text-decoration-thickness: 10px; /* Decrease the thickness of the underline */
+//   // background-color: yellow;
+//   text-underline-offset: 1px;
+//   transition: transform 0.2s ease-in-out; /* Add zoom effect on hover */
+//   transform: scale(1.05); /* Zoom in 5% on hover */
+//   /* Add yellow color rectangle shadow */
+//   // box-shadow: 0 0 10px yellow;
+// }
+
+.whats-happening {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 1.33%;
+
+  .whats-happening__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  .whats-happening__bottom {
+    display: flex;
+    margin-top: 5vh;
+    // margin-left: 34vh;
+
+    :not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+#view-button {
+  width: 6vw;
+  margin-right: 0%;
+}
+
+#slider-button next-button {
+  /* Your styles for the buttons */
+  margin-right: 50px;
+}
+/* WhatsHappening.scss */
+.cards-container {
+  display: flex;
+  align-items: center; /* Center the items vertically (if needed) */
+  position: relative; /* Set the container to relative positioning for absolute positioning of buttons */
+}
+
+.circular-button1,
+.circular-button2 {
+  background-color: rgba(1, 1, 0, 0.4); /* Use the desired RGBA grey color */
+  color: white; /* Set the button text color to white */
+  border: 1px solid rgba(128, 128, 128, 0.3); /* Use the same grey color for the border */
+  border-radius: 50%; /* Make the button circular */
+  width: 40px; /* Set the width and height for the circular button */
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none; /* Remove the default outline */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Add transition for smooth hover effect */
+
+  /* Add styles for button hover */
+  // &:hover {
+  //   background-color: rgba(128, 128, 128, 0.7); /* Darker grey color on hover */
+  //   border-color: rgba(128, 128, 128, 0.7); /* Darker grey border on hover */
+  // }
+}
+
+.circular-button1 {
+  position: absolute;
+  top: 2.6%; /* Adjust top value to vertically center the button */
+  left: 8%; /* Position the button partially outside the card */
+  z-index: 1;
+  transform: translateY(-50%); /* Center the button vertically */
+}
+
+.circular-button2 {
+  position: absolute;
+  top: 2.6%; /* Adjust top value to vertically center the button */
+  right: -0.3%; /* Position the button partially outside the card */
+  transform: translateY(-50%); /* Center the button vertically */
+}
+
+/* ... Other styles ... */
+
+.view-all-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.view-all-cards .experience-card {
+  flex: 0 0 calc(33.333% - 10px); /* Assuming 10px as the gap between cards */
+  margin-bottom: 20px; /* Gap between rows */
+}
+
+/* ... (rest of your existing CSS) ... */
+
+/* Add this to your WhatsHappening.scss or a relevant CSS/SCSS file */
+
+#circular-button.left {
+  left: 12%;
+  top: 92.3%;
+}
+
+#circular-button.right {
+  right: 11.9%;
+  top: 92.3%;
+}

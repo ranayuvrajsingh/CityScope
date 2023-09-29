@@ -1,0 +1,213 @@
+.featured-content {
+  .featured-content__header {
+    display: flex;
+    justify-content: space-between; // This will add space between the items
+    align-items: center; // This will vertically align the items in the center
+  }
+}
+
+.featured-content {
+  .featured-content__header {
+    h2.subheading-22 {
+      margin-top: 10px; // Adjust this value as per your design needs
+    }
+  }
+
+  .featuredcontent__top {
+    h4.Stories,
+    h4 > .City-guide {
+      margin-top: 5px; // Adjust this value as per your design needs
+    }
+  }
+}
+
+.featuredcontent__top {
+  margin-bottom: -10px !important;
+}
+
+.featured-content {
+  overflow: visible; // Ensure overflowed content is visible
+  position: relative; // Set the positioning context for the buttons
+}
+
+.circular-button {
+  position: absolute; // Absolute position the buttons
+  z-index: 10; // Ensure they appear above the cards
+  top: 50%; // Center them vertically
+  transform: translateY(-50%); // Adjust for exact centering
+}
+
+.circular-button.left {
+  left: -0px; // Half the width of the button to position it half outside
+}
+
+.circular-button.right {
+  right: -0px; // Half the width of the button to position it half outside
+}
+
+// ... rest of your styles ...
+
+.subheading-32:hover {
+  color: #24b6a5; /* Change the color to the desired hover color */
+  cursor: pointer; /* Optional: Show a pointer cursor on hover */
+  text-decoration: underline; /* Add an underline on hover */
+  transition: transform 0.2s ease-in-out; /* Add zoom effect on hover */
+  transform: scale(1.05); /* Zoom in 5% on hover */
+  // background-color: #0b0b0b;
+  background-size: 10px;
+}
+
+.stories-button {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+
+  // Zooming-in effect on hover
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.stories-button:hover {
+  background-color: yellow;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); // Example shadow effect
+  transform: scale(1.05); // Apply a slight scale-up effect on hover
+}
+
+.City-guide {
+  width: 107px;
+  height: 32px;
+  flex-grow: 0;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5f44b0;
+}
+
+.Stories {
+  width: 73px;
+  height: 32px;
+  flex-grow: 0;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0e0e0d;
+}
+
+/* FeaturedContent.scss */
+/* ... your existing styles ... */
+
+/* Styles for the circular buttons */
+.circular-button {
+  background-color: rgba(
+    128,
+    128,
+    128,
+    0.7
+  ); /* Dark grey with some transparency */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s; /* Add transition for smooth hover effect */
+
+  /* Add styles for button hover */
+  &:hover {
+    background-color: rgba(128, 128, 128, 0.9); /* Darker grey color on hover */
+  }
+}
+
+/* Apply the circular button style to both previous and next buttons */
+.featuredcontent__bottom .circular-button {
+  position: absolute;
+  top: 50%; /* Vertically center the button */
+  transform: translateY(-50%); /* Center the button vertically */
+  width: 20px;
+  height: 20px;
+}
+
+/* Set the left circular button to partially overlap on the left side of cards */
+.featuredcontent__bottom .circular-button.left {
+  left: -22px; /* Position the button partially outside the card */
+  top: 50.5%;
+  z-index: 1;
+}
+
+/* Set the right circular button to partially overlap on the right side of cards */
+.featuredcontent__bottom .circular-button.right {
+  right: -15px; /* Position the button partially outside the card */
+  top: 50.5%;
+  z-index: 1;
+}
+
+// .all-articles {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+
+//   > div {
+//     // flex-basis: calc(33.333% - 10px);
+//     margin-top: 10px;
+//   }
+// }
+
+// .all-articles {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+
+//   // Assuming each ArticleCard has a class of 'article-card'
+//   .article-card {
+//     flex-basis: calc(33.33% - 20px); // 20px is for spacing between cards
+//     margin-bottom: 10px;
+//   }
+// }
+
+// Ensure the container doesn't overflow
+.featured-content {
+  // overflow: hidden;
+  position: relative;
+}
+
+// Adjust the buttons to ensure they don't overlap with other components
+.circular-button.left,
+.circular-button.right {
+  z-index: 1; // This ensures the buttons are above the cards
+  position: absolute; // This will position the buttons relative to the .featured-content container
+  top: 10%;
+  transform: translateY(-10%); // This centers the buttons vertically
+}
+
+.circular-button.left {
+  left: 0%;
+}
+
+.circular-button.right {
+  right: 0;
+}
+
+#featureViewAll {
+  margin-right: 3px;
+}
+
+.featuredcontent__bottom {
+  margin-left: -5px; // Adjust this value to shift the cards to the left as needed
+}

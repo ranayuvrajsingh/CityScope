@@ -1,0 +1,6 @@
+#ContributorPopUp {
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+  backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
+  pointer-events: auto;
+}

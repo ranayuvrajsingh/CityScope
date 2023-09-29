@@ -1,0 +1,100 @@
+/* LoginPage.css */
+
+#login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 55vw;
+
+  background-color: #f0f0f0;
+}
+
+#image-container img {
+  /* Style the left half here */
+  flex: 1;
+  padding: 2px;
+  /* border-right: 1px solid #ccc; Add a vertical line */
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+}
+
+#login-form {
+  /* Style the right half here */
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#login-form h2 {
+  margin-bottom: 200px;
+  padding-left: 120px;
+  padding-top: 1px;
+  /* text-decoration: underline; */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* text-decoration: underline;  */
+}
+.login-button img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* You can customize button styles for each login option here */
+#google-button {
+  background-color: #db4437;
+  color: white;
+  /* width: 20vw; */
+  padding-left: 100px;
+}
+
+#facebook-button {
+  background-color: #3b5998;
+  color: white;
+  /* width: 20vw; */
+  padding-left: 100px;
+}
+
+#apple-button {
+  background-color: black;
+  color: white;
+  /* width: 20vw; */
+  padding-left: 100px;
+}
+
+/* Customizable styles for the image */
+#image-container img {
+  width: 30vw; /* Image covers the full left side */
+  height: 70vh; /* Maintain aspect ratio */
+}
+
+/* Customizable styles for the login form */
+#login-form {
+  /* Add your custom styles here */
+}
+
+/* Customizable styles for the login buttons */
+.login-button {
+  /* Add your custom styles here */
+}
+.logo {
+  /* Add styles for the logo */
+  position: absolute;
+  top: 40px; /* Adjust the top position as needed */
+  left: 40px; /* Adjust the left position as needed */
+  width: 1px; /* Set the width of the logo */
+  height: 1px; /* Set the height of the logo */
+}

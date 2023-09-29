@@ -1,0 +1,96 @@
+// .byte {
+//     width: 20%;
+//     font-weight: 700;
+//     font-size: 30px;
+//     margin-left: 15%;
+//     // margin-top: 12%;
+//     text-align: center;
+//     align-self: flex-end;
+
+// }
+
+// .byte-card {
+//   margin-top: 2%;
+//   width: 100%;
+//   height: 63vh;
+//   border-radius: 10px;
+//   position: relative;
+// }
+
+.byte_information {
+  // position: absolute;
+
+  background: linear-gradient(
+    180deg,
+    rgba(14, 14, 13, 0) 0%,
+    rgba(14, 14, 13, 0.507435) 23.23%,
+    #0e0e0d 56.04%
+  );
+}
+
+// .byte-information {
+//     padding-top: 0%;
+//     padding-bottom: 0%;
+//     position: absolute;
+
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-end;
+
+//     .icon1 {
+
+//         align-self: flex-start;
+
+//         margin-left: 5.5%;
+//         margin-right: 5.5%;
+//         height: 0.01%;
+//         width: 0.01%;
+
+//     }
+
+//     .byte-title {
+//         margin-top: 5%;
+//         margin-left: 11.5%;
+//         margin-right: 5.5%;
+//         font-weight: 700;
+//         font-size: 2.2vh;
+//         color: #FFCC29;
+//         text-align: left;
+
+//     }
+
+//     .byte-description {
+
+//         margin-top: 2%;
+//         margin-left: 11.5%;
+//         margin-right: 5.5%;
+//         font-weight: 500;
+//         font-size: 2vh;
+//         color: #FFFFFF;
+//         text-align: left;
+//         margin-bottom: 10%;
+//     }
+
+//     .icon2 {
+//         position: absolute;
+//         bottom: 1%;
+//         // margin-right: 20.5%;
+//         height: 2px;
+//         width: 2px;
+//         right:18%;
+//         margin-bottom: 20%;
+//     }
+
+// }
+
+.card-img-top {
+}
+
+//TODO: icon2 margin correction in responsive
+//TODO: both icon sizes in responsive
+//

@@ -1,0 +1,67 @@
+.staggered-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.staggered-card-row {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.staggered-card {
+  flex: 0 0 calc(33.33% - 10px); /* Adjust the width as needed */
+  margin: 5px;
+  background-color: #f0f0f0; /* Card background color */
+  border: 1px solid #ddd; /* Card border */
+  border-radius: 5px;
+}
+
+.masonry-grid {
+  display: flex;
+  margin-left: -16px; /* Adjust as needed */
+  width: auto;
+  height: auto;
+}
+
+.masonry-grid-column {
+  padding-left: 16px; /* Adjust as needed */
+}
+
+.masonry-grid-item {
+  background-color: #f0f0f0; /* Card background color */
+  border: 1px solid #ddd; /* Card border */
+  border-radius: 5px;
+  margin-bottom: 16px; /* Adjust spacing as needed */
+}
+
+.illustration {
+  width: 3.18vw;
+  margin-left: 0%;
+
+  background-color: transparent;
+  margin-top: 10.7vw;
+  justify-items: center;
+}
+.GoldenCity {
+  /* width: 2000%;
+  height: 340px; */
+
+  /* position: absolute; */
+  margin-top: 25rem;
+  width: 3000%;
+  height: 400px;
+  left: -25px;
+  bottom: 1029px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 36.49%,
+    #ffcc29 125%
+  );
+}
+
+.staggeredtext {
+  margin-top: 50%;
+}

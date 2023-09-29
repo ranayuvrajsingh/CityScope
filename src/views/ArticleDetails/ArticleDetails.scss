@@ -1,0 +1,152 @@
+.article-text-content {
+  /* Resetting margins and paddings for all elements */
+  p,
+  span,
+  h1,
+  h2,
+  h3,
+  ul,
+  ol,
+  li,
+  blockquote,
+  figure,
+  img {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Applying consistent styles */
+
+  h3 {
+    color: #333;
+    font-size: 86px;
+    line-height: 1.4; // Adjusted line-height for readability
+    margin-bottom: 5px; // Consistent space after each element
+    width: 90%;
+  }
+  span {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.4; // Adjusted line-height for readability
+    margin-bottom: 5px; // Consistent space after each element
+    width: 90%;
+  }
+
+  /* If you want space between list items */
+  ul,
+  ol {
+    margin-bottom: px;
+  }
+
+  li {
+    margin-bottom: 3px; // Space between list items
+  }
+
+  img {
+    width: 70%;
+    height: 70%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.article-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.circular-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 30%;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #555;
+  }
+}
+
+.article-detail {
+  .article-header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 200px;
+
+    .photo-and-info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .circular-photo {
+        border-radius: 50%;
+        width: 55px;
+        height: 55px;
+        margin-bottom: 1px;
+      }
+    }
+
+    .article-icons {
+      display: flex;
+      gap: 1px;
+    }
+  }
+}
+
+.play-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  .play-sign-overlay {
+    position: absolute;
+    top: 54%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    z-index: 1; // To ensure it appears above the PlayIcon
+  }
+}
+
+// .article-icons .icon-button:focus {
+//   outline: none;
+//   box-shadow: none; // In case the green box is a shadow
+// }
+
+.article-icons .icon-button:hover {
+  background-color: transparent; // Removes any background color on hover
+  color: inherit; // Keeps the icon color unchanged on hover
+}
+
+// .article-icons .icon-button {
+//   border: none;
+// }
+
+.article-icons .icon-button:hover {
+  transition: transform 0.3s, color 0.3s; // Smooth transition for color and transform changes
+
+  &:hover {
+    color: #555; // Darken the color slightly on hover
+  }
+}
+/* Define the vertical line style */
+.vertical-line {
+  // position: absolute;
+  // border-left: 1px solid #817b7ba7; /* Adjust the border properties as needed */
+  height: 100vw;
+  // width: 100%;
+  margin-left: 380px; /* Adjust the margin to control the gap between content and the line */
+  z-index: 3;
+  margin-top: 5vw;
+}

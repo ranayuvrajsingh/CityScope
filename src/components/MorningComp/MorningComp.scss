@@ -1,0 +1,50 @@
+// .morning{
+
+//     height:14vh;
+//     width:45%;
+
+//     margin-left: 2.5%;
+//     margin-top:25vh;
+//     .morning-title{
+// // font-family: 'Lato';
+// // font-style: normal;
+//         font-weight: 700;
+//         font-size: 2.5vmin;
+//         // line-height: 32px;
+//         color: #1D1D1C;
+
+//         .morning-name{
+//             color:#522B9A;
+//         }
+//     }
+
+//     .morning-city-fact{
+
+//         // font-family: 'Lato';
+//         // font-style: normal;
+//         font-weight: 500;
+//         font-size: 2.5vmin;
+//         // line-height: 30p;
+//         color: #4B4B4A;
+//     }
+// }
+@import "../../styles/main.scss";
+
+.morning-title {
+  color: $neutral-n700;
+
+  > span {
+    color: $blue-b500;
+  }
+}
+
+.morning-city-fact {
+  color: $neutral-n400;
+}
+
+// ------------
+
+.morning-city-fact {
+  margin: 0%;
+  padding: 0%;
+}

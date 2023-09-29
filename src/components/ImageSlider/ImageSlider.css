@@ -1,0 +1,214 @@
+.image-slider {
+  position: relative;
+  width: 1100px; /* Adjust this as per your requirements */
+  height: 500px; /* Adjust this as per your requirements */
+  /* overflow: hidden; */
+  margin-top: -5%;
+}
+
+.image-slider__slide-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-slider__slide {
+  flex-shrink: 0;
+  width: 33%; /* Default width for all slides */
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-slider__prev-slide {
+  transform: scale(1); /* No scaling */
+  width: 9%;
+  margin-right: 0px; /* 1% gap to the right of the previous slide */
+}
+
+.image-slider__current-slide {
+  width: 110%; /* Make the current slide larger */
+  margin: 0 1%; /* 1% gap on both sides of the current slide */
+}
+
+.image-slider__next-slide {
+  transform: scale(1); /* No scaling */
+  width: 9%; /* Width of the next slide */
+  margin-left: 0px; /* 1% gap to the left of the next slide */
+}
+
+.image-slider__prev-button,
+.image-slider__next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 16px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.image-slider__prev-button:hover,
+.image-slider__next-button:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darken the background on hover */
+}
+
+.image-slider__prev-button {
+  left: 1px; /* Adjust as needed */
+}
+
+.image-slider__next-button {
+  right: 1px; /* Adjust as needed */
+}
+
+.image-slider__prev-slide::before,
+.image-slider__next-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Black with 50% opacity */
+  z-index: 1;
+}
+.image-slider__slide {
+  position: relative;
+  /* ... other styles ... */
+}
+
+.image-slider__prev-button,
+.image-slider__next-button {
+  /* ... existing styles ... */
+
+  width: 50px; /* Set the width of the button */
+  height: 50px; /* Set the height of the button */
+  border-radius: 50%; /* Make the button circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(
+    160,
+    158,
+    158,
+    0.8
+  ); /* Semi-transparent black background */
+  color: white; /* Text color */
+  font-size: 20px; /* Adjust font size as needed */
+  border: none; /* Remove border */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.image-slider__prev-button:hover,
+.image-slider__next-button:hover {
+  background-color: rgb(89, 87, 87); /* Darken the background on hover */
+}
+
+.image-slider__next-button {
+  right: -23%;
+}
+
+.image-slider__prev-button {
+  left: 6.8%;
+}
+.image-slider__current-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(52, 51, 51, 0.3),
+    rgba(0, 0, 0, 0.7)
+  );
+  pointer-events: none;
+}
+
+/* ! __________________________________________ */
+
+/* .image-slider {
+  position: relative;
+  width: 1100px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.image-slider__slide-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-slider__slide {
+  flex-shrink: 0;
+  width: 33%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Added to position the text overlay */
+/* } */
+
+/* .image-slider__prev-slide {
+  transform: scale(1);
+  width: 10%;
+} */
+
+/* .image-slider__current-slide {
+  width: 80%;
+} */
+
+/* .image-slider__next-slide {
+  transform: scale(1);
+  width: 10%;
+} */
+
+/* .image-slider__prev-button,
+.image-slider__next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%; /* Make the buttons circular */
+/* width: 40px; Width of the circular button */
+/* height: 40px; Height of the circular button */
+/* display: flex;
+  align-items: center;
+  justify-content: center;
+}  */
+
+/* .image-slider__prev-button {
+  left: 10px;
+} */
+
+/* .image-slider__next-button {
+  right: 10px;
+} * */
+
+/* .image-text-overlay {
+  position: absolute;
+  bottom: 0; Position it at the bottom of the image
+  left: 0;
+  width: 100%;
+  height: 30%; Cover the lower half of the image
+  background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
+/* filter: blur(40px); Add blur effect. Adjust the value as needed
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px 20px; Adjust padding as needed */
+/* }  */

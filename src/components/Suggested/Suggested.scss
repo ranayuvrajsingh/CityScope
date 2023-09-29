@@ -1,0 +1,110 @@
+.suggestedfilter {
+  margin-top: 3vh;
+  margin-left: 125vh;
+  width: 7vw;
+  height: 7vh;
+  background: #ffcc29;
+  border: 1px solid #dddddd;
+  color: #0d0d0d;
+  border-radius: 8px;
+  padding: 10px 28px;
+  position: absolute;
+  padding-left: 5px;
+  padding-right: 5px;
+  /* Foundation/Neutral/N0 */
+}
+.suggestedfilter:hover {
+  background-color: rgba($color: #1b0f0d, $alpha: 0.5);
+}
+.City {
+  margin-top: 3vh;
+  margin-left: 108vh;
+  width: 7vw;
+  height: 7vh;
+  background: #ffcc29;
+  border: 1px solid #dddddd;
+  color: #0d0d0d;
+  border-radius: 8px;
+  padding: 10px 28px;
+  position: relative;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.City:hover {
+  background-color: rgba($color: #4603b2, $alpha: 0.5);
+}
+.suggested {
+  margin-top: 3.5rem;
+  width: 70.7vw;
+  height: 29vw;
+
+  > h2 {
+    margin-left: 1vh;
+    margin-top: 3vh;
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+  }
+
+  .suggested__top {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    line-break: auto;
+    margin-top: 1vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+
+    .suggested__item {
+      margin-top: 2.8vh;
+      height: 15vh;
+      width: 6.7vw;
+      cursor: pointer;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .abc {
+        height: 6vh;
+      }
+    }
+  }
+  .suggestedtitles {
+    font-size: 10px;
+  }
+}
+
+/* Suggested.scss */
+.circular-button {
+  background-color: rgba(
+    128,
+    128,
+    128,
+    0.7
+  ); /* Dark grey with some transparency */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s; /* Add transition for smooth hover effect */
+
+  /* Add styles for button hover */
+  &:hover {
+    background-color: rgba(128, 128, 128, 0.9); /* Darker grey color on hover */
+  }
+}
+
+/* Apply the circular button style to both previous and next buttons */
+.pagination button {
+  margin: 0 5px;
+}
+
+/* ... other styles ... */

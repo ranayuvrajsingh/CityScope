@@ -1,0 +1,181 @@
+// .channels{
+//     width: 100vw;
+//     height: 61vh;
+//     // margin-left: 100px;
+//     margin-top: 18vh;
+
+//     .channels__top{
+//             display: flex;
+//             >h2 {
+//                 margin-left:35vh;
+//             }
+//             >h5{
+//                 margin-top:4vh;
+//                 margin-left: 140vh;
+//             }
+//         }
+//     .channels__bottom{
+//         display: flex;
+//         margin-top:2vh;
+//         margin-left: 30vh;
+
+//     }
+
+// }
+/* Channels.scss */
+
+.channels {
+  /* ... existing styles ... */
+  position: relative; /* Add relative positioning to the container */
+}
+
+/* Style the translucent navigation buttons */
+.nav-button {
+  background-color: rgba(255, 255, 255, 0.5); /* Translucent background color */
+  color: #fff; /* Text color */
+  border: none; /* Remove borders */
+  padding: 5px 10px; /* Adjust padding as needed */
+  font-size: 18px; /* Adjust font size as needed */
+  cursor: pointer; /* Change cursor on hover */
+  position: absolute; /* Position the buttons */
+  top: 50%; /* Vertically center the buttons */
+  transform: translateY(-50%); /* Adjust vertical alignment */
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+/* Style the previous button */
+.prev-button {
+  left: -200%; /* Position the button on the left side of the container */
+}
+
+/* Style the next button */
+.next-button {
+  right: -100%; /* Position the button on the right side of the container */
+}
+
+/* Add hover effect */
+.nav-button:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Translucent background color on hover */
+}
+
+/* Remove focus outline */
+.nav-button:focus {
+  outline: none;
+}
+
+.channels__bottom {
+  //   display: flex;
+  //   align-items: center;
+  //   overflow: hidden;
+
+  //   flex-direction: column;
+}
+
+.channels__slider-container {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   flex-direction: row;
+  //   transition: transform 0.3s ease-in-out;
+}
+
+#slider-button next-button {
+  /* Your styles for the buttons */
+  margin-right: 50px;
+}
+
+/* Other styles for ChannelCard and other components */
+.channels__slider-container {
+  display: flex;
+  flex-wrap: wrap;
+  transition: transform 0.3s ease-in-out;
+}
+
+.channels__row {
+  flex: 1; /* Make each row take equal space */
+  display: flex; /* Make cards display in a horizontal line */
+  flex-direction: row; /* Display cards vertically within each row */
+  align-items: center; /* Center align the cards horizontally */
+  justify-content: center; /* Center align the cards vertically */
+}
+#view-buttonChannel {
+  width: 6vw;
+  margin-right: 5%;
+}
+
+#slider-button prev-button {
+  width: 60px;
+  height: 60px;
+  margin: 226px 0 0 921px;
+  padding: 18px;
+  background-color: rgba(1, 1, 0, 0.7);
+}
+
+/* Channels.scss */
+.channels {
+  /* Add your styling for the channels container */
+}
+
+.subheading-36 {
+  /* Styles for the subheading */
+}
+
+.channels__top {
+  /* Styles for the top section */
+}
+
+/* Styles for the circular buttons */
+.circular-button {
+  /* Shared button styles */
+  background-color: rgba(0, 0, 0, 0.374);
+  color: rgb(249, 243, 243);
+  border: black;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+
+  &:hover {
+    background-color: rgba(50, 49, 49, 0.7);
+  }
+}
+
+.circular-button.prev-button {
+  /* Styles for the previous button */
+  position: absolute;
+  left: -10px;
+
+  top: 45%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.circular-button.next-button {
+  /* Styles for the next button */
+  position: absolute;
+  right: 5px;
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+.channels__bottom {
+  /* Styles for the bottom section */
+}
+
+.channels__slider-container {
+  /* Styles for the slider container */
+}
+
+.channels__row {
+  /* Styles for the row of cards */
+}

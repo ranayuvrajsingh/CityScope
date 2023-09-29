@@ -1,0 +1,165 @@
+.exp__extra-photos {
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+
+  position: absolute;
+  width: 187px;
+  height: 48px;
+  right: 30px;
+  top: 316px;
+  box-shadow: 0px 4px 16px rgba(133, 148, 167, 0.25);
+  border-radius: 8px;
+}
+
+.dropdown__button {
+  box-sizing: border-box;
+  width: 90%;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+}
+
+.location__map {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px 16px;
+  width: 360px;
+  height: 372px;
+  border: 1px solid #b0b0b0;
+  border-radius: 16px;
+}
+
+.map__button {
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+
+  position: absolute;
+
+  left: 30px;
+  bottom: 35px;
+  box-shadow: 0px 4px 16px rgba(133, 148, 167, 0.25);
+  border-radius: 8px;
+}
+
+/* Add this CSS to the existing styles */
+.experience-detail {
+  position: relative; /* Ensure the relative positioning for absolute elements */
+}
+
+/* Styles for the big banner image */
+.experience-detail__big-photo {
+  width: 100%;
+  max-height: 400px; /* You can adjust this value as needed */
+  border-radius: 8px;
+  object-fit: cover; /* Ensure the image maintains its aspect ratio */
+}
+
+/* Styles for the container of additional photos */
+.experience-detail__additional-photos {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensure additional photos wrap to the next line if needed */
+}
+
+/* Styles for small additional photos */
+.experience-detail__additional-photo {
+  width: 80px; /* You can adjust this value as needed */
+  height: 80px; /* You can adjust this value as needed */
+  margin: 5px;
+  object-fit: cover; /* Ensure the images maintain their aspect ratio */
+  border-radius: 4px;
+  cursor: pointer; /* Add a cursor pointer to indicate interactivity */
+}
+
+/* Styles for the "Show More" button */
+// .experience-detail__show-more,
+// .experience-detail__show-less {
+//   background-color: #ffffff;
+//   border: 1px solid #e2e8f0;
+//   border-radius: 6px;
+//   padding: 8px 16px;
+//   margin-top: 10px;
+//   cursor: pointer;
+//   position: relative; /* Ensure the buttons are positioned relative to their parent */
+//   z-index: 1; /* Ensure the buttons appear above the images */
+// }
+/* Add this CSS to the existing styles */
+.experience-detail {
+  position: relative; /* Ensure the relative positioning for absolute elements */
+}
+
+/* Styles for the big banner image */
+.experience-detail__big-photo {
+  width: 100%;
+  max-height: 400px; /* You can adjust this value as needed */
+  border-radius: 8px;
+  object-fit: cover; /* Ensure the image maintains its aspect ratio */
+}
+
+/* Styles for the container of additional photos */
+.experience-detail__additional-photos {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensure additional photos wrap to the next line if needed */
+}
+
+/* Styles for small additional photos */
+.experience-detail__additional-photo {
+  width: 80px; /* You can adjust this value as needed */
+  height: 80px; /* You can adjust this value as needed */
+  margin: 5px;
+  object-fit: cover; /* Ensure the images maintain their aspect ratio */
+  border-radius: 4px;
+  cursor: pointer; /* Add a cursor pointer to indicate interactivity */
+}
+
+/* Styles for the "Show More" button */
+/* Styles for the "Show More" button */
+// .experience-detail__show-more,
+// .experience-detail__show-less {
+//   background-color: #ffffff;
+//   border: 1px solid #e2e8f0;
+//   border-radius: 6px;
+//   padding: 8px 16px;
+//   margin-top: 10px;
+//   cursor: pointer;
+//   position: absolute; /* Ensure the buttons are positioned relative to their parent */
+//   right: 30px; /* Adjust the right position as needed */
+//   bottom: 10px; /* Adjust the bottom position as needed */
+//   z-index: 100; /* Ensure the buttons appear above the images */
+// }
+
+/* Additional styles for other elements (if needed) */
+/* .exp__details, .col-8, .col-4, etc. */
+
+/* Adjust styles for the map and dropdown elements (if needed) */
+/* .exp__extra-photos, .dropdown__button, .location__map, .map__button, etc. */
+
+// ... (your existing styles)
+
+.collapsible-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  h3 {
+    margin-right: 10px;
+    font-size: 10px;
+  }
+
+  i {
+    transition: transform 0.3s;
+  }
+
+  .rotated {
+    transform: rotate(180deg);
+  }
+}

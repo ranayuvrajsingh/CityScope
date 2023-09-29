@@ -1,0 +1,58 @@
+// .positivity-card{
+//     //width:45vw;
+//     height: 33.2vh;
+//     // aspect-ratio: 3;
+//     width:45vw;
+//     border-radius: 10px;
+//     margin-top:53vh;
+//     margin-left:16vw;
+//     position: relative;
+//     display: flex;
+//     background-color: aquamarine;
+//     background-image:  var(--img);
+
+//     .positivity__button{
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: center;
+//         align-items: center;
+//         padding: 16px 32px;
+//         position: absolute;
+//         width: 342px;
+//         height: 56px;
+//         left: 60px;
+//         top: 236px;
+//         font-weight: 400;
+//         font-size: 16px;
+//         line-height: 24px;
+//         background: #FCCC29;
+//         border-radius: 30px;
+//     }
+// }
+
+.positivity__img {
+  width: 100%;
+  height: 100%;
+}
+
+.positivity-card {
+  //   height: 39%;
+  margin-top: 5%;
+  //   position: absolute;
+  // width: 648px;
+  // height: 280px;
+  height: 241px;
+  //   left: 0px;
+  //   top: 0px;
+}
+
+// marginTop: "3%",
+// height: "31%",
+// borderRadius: "10px",
+// width: "197%",
+.positivity-card:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Add a subtle box-shadow on hover */
+  transform: scale(1.05); /* Slightly scale up the card on hover */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
